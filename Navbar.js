@@ -1,13 +1,13 @@
 import React,{Component} from 'react';
 
 class Navbar extends Component {
-  state = {
+  state = {   // state is object that stores property values of component
     searchValue: "",
-    meals: []
+    meals: []  // array of meals
   };
 
-  handleOnChange = event => {
-    this.setState({ searchValue: event.target.value });
+  handleOnChange = event => {  // eventhandler
+    this.setState({ searchValue: event.target.value }); // setState method is used to change the value of state
   };
 
   handleSearch = () => {
